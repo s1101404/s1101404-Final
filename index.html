@@ -99,7 +99,7 @@
 			<article id="work1" class="panel">
 				<div class="row">
 					<div class="col-6 col-12-medium">
-						<h3>?</h3>
+						<h3 style = "font-size: 50px;">?</h3>
 					</div>
 					<div class="col-6 col-12-medium">
 						<input id = "work1b" type="button" value="今天晚上吃什麼">
@@ -116,14 +116,18 @@
 			</article>
 			<!-- work2 -->
 			<article id="work2" class="panel">
-				<div class="row">
 					<div class="col-6 col-12-medium">
-						<h1>社團課程時間表</h1>
+						<h1 id = "work2h1">社團課程時間表</h1>
 					</div>
-					<div class="col-6 col-12-medium">
+					<div id = "work2div">
+						<form method = "post" action = "">
+							<p style = "font-size: 10 px">請輸入日期</p>
+							<input type="text" id="month" required maxlength="2" size="1">/
+							<input type="text" id="date" required maxlength="2" size="1"></p>
+							<input type = "button" id = "submit" value = "提交" onclick = "login()">
+						</form>
 						<table id="courseTable"></table>
 					</div>
-				</div>
 			</article>
 			<!-- work3 -->
 			<article id="work3" class="panel">

@@ -15,4 +15,3 @@ function setMonthAndDay(startMonth, startDay) {
     startDate.setMinutes(0);
     startDate.setSeconds(0);
 }
-setMonthAndDay(3, 9);
