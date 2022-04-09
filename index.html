@@ -59,7 +59,7 @@
 							<a href="#work3" class="image fit"><img src="images/pic03.jpg" alt=""></a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+							<a href="#work4" class="image fit"><img src="images/pic04.jpg" alt=""></a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
 							<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
@@ -99,10 +99,10 @@
 			<article id="work1" class="panel">
 				<div class="row">
 					<div class="col-6 col-12-medium">
-						<h3 style = "font-size: 50px;">?</h3>
+						<h3 style="font-size: 50px;">?</h3>
 					</div>
 					<div class="col-6 col-12-medium">
-						<input id = "work1b" type="button" value="今天晚上吃什麼">
+						<input id="work1b" type="button" value="今天晚上吃什麼">
 					</div>
 					<div class="col-6 col-12-medium">
 						<ul>
@@ -116,34 +116,38 @@
 			</article>
 			<!-- work2 -->
 			<article id="work2" class="panel">
-					<div class="col-6 col-12-medium">
-						<h1 id = "work2h1">社團課程時間表</h1>
-					</div>
-					<div id = "work2div">
-						<form method = "post" action = "">
-							<p style = "font-size: 10 px">請輸入日期</p>
-							<input type="text" id="month" required maxlength="2" size="1">/
-							<input type="text" id="date" required maxlength="2" size="1"></p>
-							<input type = "button" id = "submit" value = "完成" onclick = "login()">
-						</form>
-						<table id="add"></table>
-						<table id="courseTable"></table>
-					</div>
+				<div class="col-6 col-12-medium">
+					<h1 id="work2h1">社團課程時間表</h1>
+				</div>
+				<div id="work2div">
+					<form method="post" action="">
+						<p style="font-size: 10 px">請輸入日期</p>
+						<input type="text" id="month" required maxlength="2" size="1">/
+						<input type="text" id="date" required maxlength="2" size="1"></p>
+						<input type="button" id="submit" value="完成" onclick="login()">
+					</form>
+					<table id="add"></table>
+					<table id="courseTable"></table>
+				</div>
 			</article>
 			<!-- work3 -->
 			<article id="work3" class="panel">
-				
-					<body>
-
-						<h1 id = "work3h1">你今年的愛情是什麼滋味?</h1>
-						<br>
-						<div>
-							<div class="col-6 col-12-medium">
-							<h2 id="question"></h2>
-						</div>
-							<div id="options"></div>
-						<input id="startButton" type="button" value="開始作答">
-					</body>		
+				<h1 id="work3h1">你今年的愛情是什麼滋味?</h1>
+				<br>
+				<div>
+					<div class="col-6 col-12-medium">
+						<h2 id="question"></h2>
+					</div>
+					<div id="options"></div>
+					<input id="startButton" type="button" value="開始作答">
+			</article>
+			<!-- work4 -->
+			<article id="work4" class="panel">
+				<h1>我要去右下角</h1>
+				<div>
+					<canvas id="myCanvas" width="600" height="600"></canvas>
+					<p id="talkBox"></p>
+				</div>
 			</article>
 		</div>
 
@@ -168,6 +172,7 @@
 	<script src="assets/js/work2/topic.js"></script>
 	<script src="assets/js/work3/data.js"></script>
 	<script src="assets/js/work3/main.js"></script>
+	<script src="assets/js/work4/main.js"></script>
 
 </body>
 
