@@ -62,7 +62,7 @@
 							<a href="#work4" class="image fit"><img src="images/pic04.jpg" alt=""></a>
 						</div>
 						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+							<a href="#work5" class="image fit"><img src="images/pic05.jpg" alt=""></a>
 						</div>
 					</div>
 				</section>
@@ -124,10 +124,11 @@
 					<form method="post" action="">
 						<p style="font-size: 10 px">請輸入日期</p>
 						<p><input type="text" id="month" required maxlength="2" size="1">/
-						<input type="text" id="date" required maxlength="2" size="1"></p>
+							<input type="text" id="date" required maxlength="2" size="1">
+						</p>
 						<input type="button" id="submit" value="完成" onclick="login()">
 					</form>
-				
+
 					<table id="add"></table>
 					<table id="courseTable"></table>
 				</div>
@@ -146,14 +147,22 @@
 			<!-- work4 -->
 			<article id="work4" class="panel">
 				<h1 id="work3h1">我要去右下角</h1><br>
-				<div id = "startButton">
-					<canvas id="myCanvas" width="600" height="600" ></canvas>
-					
+				<div id="startButton">
+					<canvas id="myCanvas" width="600" height="600"></canvas>
 				</div>
 				<p id="talkBox"></p>
-				<div>
-					<h3 style = "color: solid black; font-weight: 900;">說明: 操控: WASD</h2>
+				<div id="work2div">
+					<h3 style="color: solid black; font-weight: 900;">說明: 操控: WASD</h2>
 				</div>
+			</article>
+			<!-- work5 -->
+			<article id="work5" class="panel">
+				<h1>YouTube 心情點唱機</h1>
+				<h2></h2>
+				<!--播放歌曲名稱放這裡-->
+				<div id="player"></div><!-- YouTube Video Player -->
+				<br>
+				<input id="playButton" type="button" value="Play">
 			</article>
 		</div>
 
@@ -179,6 +188,10 @@
 	<script src="assets/js/work3/data.js"></script>
 	<script src="assets/js/work3/main.js"></script>
 	<script src="assets/js/work4/main.js"></script>
+	<script src="assets/js/work5/main.js"></script>
+	<script src="assets/js/work5/playList.js"></script>
+	<script src="assets/js/work5/jsconfig.json"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 
