@@ -31,7 +31,7 @@
 			<article id="home" class="panel intro">
 				<header>
 					<h1>莊承哲</h1>
-					<p>1101404</p>
+					<p style="color: solid black; font-weight: 600;">1101404</p>
 				</header>
 				<a href="#work" class="jumplink pic">
 					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
@@ -42,26 +42,26 @@
 			<!-- Work -->
 			<article id="work" class="panel">
 				<header>
-					<h2>作品集</h2>
+					<h2 style="color: solid black; font-weight: 900;">作品集</h2>
 				</header>
-				<p>
+				<p style="color: solid black; font-weight: 900;">
 					我的作品
 				</p>
 				<section>
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
+						<div id = "works" class="col-4 col-6-medium col-12-small">
 							<a href="#work1" class="image fit"><img src="images/pic01.jpg" alt=""></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id = "works" class="col-4 col-6-medium col-12-small">
 							<a href="#work2" class="image fit"><img src="images/pic02.jpg" alt=""></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id = "works" class="col-4 col-6-medium col-12-small">
 							<a href="#work3" class="image fit"><img src="images/pic03.jpg" alt=""></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id = "works" class="col-4 col-6-medium col-12-small">
 							<a href="#work4" class="image fit"><img src="images/pic04.jpg" alt=""></a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
+						<div id = "works" class="col-4 col-6-medium col-12-small">
 							<a href="#work5" class="image fit"><img src="images/pic05.jpg" alt=""></a>
 						</div>
 					</div>
@@ -147,18 +147,19 @@
 			<!-- work4 -->
 			<article id="work4" class="panel">
 				<h1 id="work3h1">我要去右下角</h1><br>
-				<div id="startButton">
-					<canvas id="myCanvas" width="600" height="600"></canvas>
+				<input type="button" id="submit" value="開始" onclick="start()">
+				<p id="talk" ></p>
+				<p id="talkBox" ></p>
+				<div id="start">
 				</div>
-				<p id="talkBox"></p>
 				<div id="work2div">
 					<h3 style="color: solid black; font-weight: 900;">說明: 操控: WASD</h2>
 				</div>
 			</article>
 			<!-- work5 -->
 			<article id="work5" class="panel">
-				<h1>YouTube 心情點唱機</h1>
-				<h2></h2>
+				<h1>YouTube 心情點唱機</h1><br>
+				<h2></h2><br>	
 				<!--播放歌曲名稱放這裡-->
 				<div id="player"></div><!-- YouTube Video Player -->
 				<br>
