@@ -60,22 +60,22 @@ $(function () {
 
         switch (event.code) {
             case
-                "ArrowLeft":
+                "KeyA":
                 targetImg.x = currentImgMain.x - gridLength;
                 targetImg.y = currentImgMain.y;
                 cutImagePositionX = 175;//臉朝左
                 break;
-            case "ArrowUp":
+            case "KeyW":
                 targetImg.x = currentImgMain.x;
                 targetImg.y = currentImgMain.y - gridLength;
                 cutImagePositionX = 355;//臉朝上
                 break;
-            case "ArrowRight":
+            case "KeyD":
                 targetImg.x = currentImgMain.x + gridLength;
                 targetImg.y = currentImgMain.y;
                 cutImagePositionX = 540;//臉朝右
                 break;
-            case "ArrowDown":
+            case "KeyS":
                 targetImg.x = currentImgMain.x;
                 targetImg.y = currentImgMain.y + gridLength;
                 cutImagePositionX = 0;//臉朝下
