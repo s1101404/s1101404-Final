@@ -54,7 +54,7 @@ $(function () {
             "x": -1,
             "y": -1
         }
-        event.preventDefault();
+        //event.preventDefault();
         //避免鍵盤預設行為發生，如捲動/放大/換頁...
         //判斷使用者按下什麼並推算目標座標
 
