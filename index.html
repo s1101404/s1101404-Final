@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>d3、vue 畫一個台灣地圖 - August - Let's Write</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link rel="stylesheet" href="dist/augurio-taiwan.min.css"/>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="taiwan-map" ref="map">
+        <div id="map">
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+        </div>
+      </div>
+      <div class="shop-list">
+        <h1>{{ h1 }}</h1>
+        <h2>{{ h2 }}</h2>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="dist/augurio-taiwan.min.js"></script>
+  </body>
+</html>
