@@ -14,6 +14,15 @@
     <div class="tital">
         <h1>台灣本島疫情報告</h1>
     </div>
+    <div class="header">
+        <div id="link"><a href="#app">
+                <h3>地圖</h3>
+            </a></div>
+        <div id="link"><a href="#chart_div">
+                <h3>a</h3>
+            </a></div>
+    </div>
+
     <div class="container" id="app">
         <div class="taiwan-map" ref="map">
             <div id="map">
@@ -23,16 +32,19 @@
         <div class="shop-list">
             <h1>{{ h1 }}</h1>
             <h2>{{ h2 }}</h2>
-            <h3>{{ h3 }}</h3>
+            <h2>{{ h3 }}</h2>
         </div>
     </div>
-    <div id="test"><input type="button" value="今天晚上吃什麼"></div>
+    <div class="container2" id="app">
+        <div id="chart_div" style="width: 1000px; height: 450px"></div>
+    </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="dist/augurio-taiwan.min.js"></script>
-    <script src="dist/test.js"></script>
+    <script src="dist/data.js"></script>
 </body>
 
 </html>
