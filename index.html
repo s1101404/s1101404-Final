@@ -41,14 +41,14 @@
             $("#chart_div2").hide()
             $("#chart_div3").show()
             $("#chart_div4").hide()
-            $("#chart_div3").css('margin-top','-24.6%');
+            $("#chart_div3").css('margin-top','-29.6%');
         })
         $("#a4").click(function(){
             $("#chart_div").hide()
             $("#chart_div2").hide()
             $("#chart_div3").hide()
             $("#chart_div4").show()
-            $("#chart_div4").css('margin-top','-24.6%');
+            $("#chart_div4").css('margin-top','-29.6%');
         })
     })
   </script>
@@ -59,10 +59,10 @@
     </div>
     <div class="header">
         <div id="link"><a href="#app">
-                <h3>地圖</h3>
+                <h3>全台</h3>
             </a></div>
         <div id="link"><a href="#chart_div">
-                <h3>a</h3>
+                <h3>地區</h3>
             </a></div>
     </div>
 
@@ -74,24 +74,24 @@
         </div>
         <div class="shop-list">
             <h1>{{ h1 }}</h1>
-            <h2>{{ h2 }}</h2>
-            <h2>{{ h3 }}</h2>
+            <h2 style="color: red">{{ h2 }}</h2>
+            <h2 style="color: orangered">{{ h3 }}</h2>
         </div>
     </div>
     <div class="header">
-        <div id="link" style="cursor:pointer;"><a id="all" href="#"><h3>全部</h3></a>  </div>
-        <div id="link" style="cursor:pointer;"><a id="a1" href="#"><h3>北部</h3></a> </div>
-        <div id="link" style="cursor:pointer;"><a id="a2" href="#"><h3>中部</h3></a>  </div>
-        <div id="link" style="cursor:pointer;"><a id="a3" href="#"><h3>南部</h3></a> </div>
-        <div id="link" style="cursor:pointer;"><a id="a4" href="#"><h3>東部</h3></a>  </div>
+        <div id="link"><a id="all" href="#"><h3>全部</h3></a>  </div>
+        <div id="link"><a id="a1" href="#"><h3>北部</h3></a> </div>
+        <div id="link"><a id="a2" href="#"><h3>中部</h3></a>  </div>
+        <div id="link"><a id="a3" href="#"><h3>南部</h3></a> </div>
+        <div id="link"><a id="a4" href="#"><h3>東部</h3></a>  </div>
     </div>
     <div class="container2" id="app">
-        <div id="chart_div" style="width: 800px; height: 425px"></div>
-        <div id="chart_div2" style="width: 800px; height: 425px"></div>
+        <div id="chart_div" class= "chart" style="width: 1000px; height: 500px"></div>
+        <div id="chart_div2" class= "chart" style="width: 1000px; height: 500px"></div>
     </div>
     <div class="container2" id="app">
-        <div id="chart_div3" style="width: 800px; height: 425px"></div>
-        <div id="chart_div4" style="width: 800px; height: 425px;"></div>
+        <div id="chart_div3" class= "chart" style="width: 1000px; height: 500px"></div>
+        <div id="chart_div4" class= "chart" style="width: 1000px; height: 500px;"></div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>

@@ -16,7 +16,7 @@ function drawStacked() {
     ]);
 
     var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: '北部',
         titleTextStyle: {
             color: 'white'
           },
@@ -33,7 +33,7 @@ function drawStacked() {
             textStyle:{color: 'white',}
         },
         hAxis: {
-            title: 'Total Population',
+            title: '人口數',
             titleTextStyle: {
                 color: 'white'
               },
@@ -43,7 +43,7 @@ function drawStacked() {
             }
         },
         vAxis: {
-            title: 'City',
+            title: '城市',
             titleTextStyle: {
                 color: 'white'
               },
@@ -61,16 +61,16 @@ google.charts.setOnLoadCallback(drawStacked2);
 
 function drawStacked2() {
     var data = google.visualization.arrayToDataTable([
-        ['City222', '20120 Population', '2000 Population'],
-        ['New York City, NY', 8175000, 8008000],
-        ['Los Angeles, CA', 3792000, 3694000],
-        ['Chicago, IL', 2695000, 2896000],
-        ['Houston, TX', 2099000, 1953000],
-        ['Philadelphia, PA', 1526000, 1517000]
+        ['城市', '確診數', '增加數'],
+        ['苗栗縣', total[7][0], total[7][1]],
+        ['臺中市', total[8][0], total[8][1]],
+        ['南投縣', total[9][0], total[9][1]],
+        ['彰化縣', total[10][0], total[10][1]],
+        ['雲林縣', total[11][0], total[11][1]],
     ]);
 
     var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: '中部',
         titleTextStyle: {
             color: 'white'
           },
@@ -87,7 +87,7 @@ function drawStacked2() {
             textStyle:{color: 'white',}
         },
         hAxis: {
-            title: 'Total Population',
+            title: '人口數n',
             titleTextStyle: {
                 color: 'white'
               },
@@ -97,7 +97,7 @@ function drawStacked2() {
             }
         },
         vAxis: {
-            title: 'City',
+            title: '城市',
             titleTextStyle: {
                 color: 'white'
               },
@@ -115,16 +115,16 @@ google.charts.setOnLoadCallback(drawStacked3);
 
 function drawStacked3() {
     var data = google.visualization.arrayToDataTable([
-        ['City', '2010 Population', '2000 Population'],
-        ['New York City, NY', 8175000, 8008000],
-        ['Los Angeles, CA', 3792000, 3694000],
-        ['Chicago, IL', 2695000, 2896000],
-        ['Houston, TX', 2099000, 1953000],
-        ['Philadelphia, PA', 1526000, 1517000]
+        ['城市', '確診數', '增加數'],
+        ['嘉義縣', total[12][0], total[12][1]],
+        ['嘉義市', total[13][0], total[13][1]],
+        ['臺南市', total[14][0], total[14][1]],
+        ['高雄市', total[15][0], total[15][1]],
+        ['屏東縣', total[16][0], total[16][1]],
     ]);
 
     var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: '南部',
         titleTextStyle: {
             color: 'white'
           },
@@ -141,7 +141,7 @@ function drawStacked3() {
             textStyle:{color: 'white',}
         },
         hAxis: {
-            title: 'Total Population',
+            title: '人口數',
             titleTextStyle: {
                 color: 'white'
               },
@@ -151,7 +151,7 @@ function drawStacked3() {
             }
         },
         vAxis: {
-            title: 'City',
+            title: '城市',
             titleTextStyle: {
                 color: 'white'
               },
@@ -169,16 +169,13 @@ google.charts.setOnLoadCallback(drawStacked4);
 
 function drawStacked4() {
     var data = google.visualization.arrayToDataTable([
-        ['City', '201440 Population', '2000 Population'],
-        ['New York City, NY', 8175000, 8008000],
-        ['Los Angeles, CA', 3792000, 3694000],
-        ['Chicago, IL', 2695000, 2896000],
-        ['Houston, TX', 2099000, 1953000],
-        ['Philadelphia, PA', 1526000, 1517000]
+        ['城市', '確診數', '增加數'],
+        ['花蓮縣', total[17][0], total[17][1]],
+        ['臺東縣', total[18][0], total[18][1]],
     ]);
 
     var options = {
-        title: 'Population of Largest U.S. Cities',
+        title: '東部',
         titleTextStyle: {
             color: 'white'
           },
@@ -195,7 +192,7 @@ function drawStacked4() {
             textStyle:{color: 'white',}
         },
         hAxis: {
-            title: 'Total Population',
+            title: '人口數',
             titleTextStyle: {
                 color: 'white'
               },
@@ -205,7 +202,7 @@ function drawStacked4() {
             }
         },
         vAxis: {
-            title: 'City',
+            title: '城市',
             titleTextStyle: {
                 color: 'white'
               },
