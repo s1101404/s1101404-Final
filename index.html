@@ -9,25 +9,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="dist/augurio-taiwan.min.css" />
 </head>
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
-    function progress() {
-	    var aq = $("#aqindex").val();
-	    $.ajax({
-		url: "php/data.php",
-		data: {
-		   aq: aq
-	        },
-		type: "POST",
-		datatype: "html",
-	        success: function( output ) {
-		   $( "#out" ).html(output);
-	        },
-		error : function(){
-		    alert( "Request failed." );
-		}
-	    });
-	}
-</script>
+     $(document).ready(function(){
+        $("#all").click(function(){
+            $("#chart_div").show()
+            $("#chart_div2").show()
+            $("#chart_div3").show()
+            $("#chart_div4").show()
+            $("#chart_div3").css('margin','0%');
+            $("#chart_div4").css('margin','0%');
+        })
+        $("#a1").click(function(){
+            $("#chart_div").show()
+            $("#chart_div2").hide()
+            $("#chart_div3").hide()
+            $("#chart_div4").hide()
+            $("#chart_div3").css('margin','0%');
+            $("#chart_div4").css('margin','0%');
+        })
+        $("#a2").click(function(){
+            $("#chart_div").hide()
+            $("#chart_div2").show()
+            $("#chart_div3").hide()
+            $("#chart_div4").hide()
+            $("#chart_div3").css('margin','0%');
+            $("#chart_div4").css('margin','0%');
+        })
+        $("#a3").click(function(){
+            $("#chart_div").hide()
+            $("#chart_div2").hide()
+            $("#chart_div3").show()
+            $("#chart_div4").hide()
+            $("#chart_div3").css('margin-top','-24.6%');
+        })
+        $("#a4").click(function(){
+            $("#chart_div").hide()
+            $("#chart_div2").hide()
+            $("#chart_div3").hide()
+            $("#chart_div4").show()
+            $("#chart_div4").css('margin-top','-24.6%');
+        })
+    })
+  </script>
 
 <body>
     <div class="tital">
@@ -55,33 +79,28 @@
         </div>
     </div>
     <div class="header">
-        <div id="link" style="cursor:pointer;" onlick="progress()"></div>
+        <div id="link" style="cursor:pointer;"><a id="all" href="#"><h3>全部</h3></a>  </div>
+        <div id="link" style="cursor:pointer;"><a id="a1" href="#"><h3>北部</h3></a> </div>
+        <div id="link" style="cursor:pointer;"><a id="a2" href="#"><h3>中部</h3></a>  </div>
+        <div id="link" style="cursor:pointer;"><a id="a3" href="#"><h3>南部</h3></a> </div>
+        <div id="link" style="cursor:pointer;"><a id="a4" href="#"><h3>東部</h3></a>  </div>
     </div>
     <div class="container2" id="app">
-        <div id="chart_div" style="width: 900px; height: 425px"></div>
+        <div id="chart_div" style="width: 800px; height: 425px"></div>
+        <div id="chart_div2" style="width: 800px; height: 425px"></div>
     </div>
-    <form method = "post" action = "#">
-         <p>Select a air pollution index:
-            <select id = "aqindex">
-               <option selected>AQI</option>
-               <option>SO2</option>
-               <option>CO</option>
-               <option>O3</option>
-               <option>PM10</option>
-               <option>PM2.5</option>
-               <option>NO2</option>
-	   </select></p>
-         <p><input id = "submit" type="button" value = "Send Query" onclick="progress()"></p>
-      </form>
-      <div id="out"></div>
-
+    <div class="container2" id="app">
+        <div id="chart_div3" style="width: 800px; height: 425px"></div>
+        <div id="chart_div4" style="width: 800px; height: 425px;"></div>
+    </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>	
+    
     <script src="dist/augurio-taiwan.min.js"></script>
     <script src="dist/data.js"></script>
+
 </body>
 
 </html>

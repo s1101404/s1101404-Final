@@ -44,7 +44,7 @@
       },
       "properties": {
         "COUNTYID": "G",
-        "COUNTYCODE": "18",
+        "COUNTYCODE": "6",
         "COUNTYNAME": "宜蘭縣",
         "COUNTYENG": "Yilan County"
       }
@@ -80,7 +80,7 @@
       },
       "properties": {
         "COUNTYID": "N",
-        "COUNTYCODE": "0",
+        "COUNTYCODE": "10",
         "COUNTYNAME": "彰化縣",
         "COUNTYENG": "Changhua County"
       }
@@ -132,7 +132,7 @@
       },
       "properties": {
         "COUNTYID": "M",
-        "COUNTYCODE": "1",
+        "COUNTYCODE": "9",
         "COUNTYNAME": "南投縣",
         "COUNTYENG": "Nantou County"
       }
@@ -172,7 +172,7 @@
       },
       "properties": {
         "COUNTYID": "P",
-        "COUNTYCODE": "2",
+        "COUNTYCODE": "11",
         "COUNTYNAME": "雲林縣",
         "COUNTYENG": "Yunlin County"
       }
@@ -227,7 +227,7 @@
       },
       "properties": {
         "COUNTYID": "T",
-        "COUNTYCODE": "3",
+        "COUNTYCODE": "16",
         "COUNTYNAME": "屏東縣",
         "COUNTYENG": "Pingtung County"
       }
@@ -250,7 +250,7 @@
       },
       "properties": {
         "COUNTYID": "C",
-        "COUNTYCODE": "4",
+        "COUNTYCODE": "2",
         "COUNTYNAME": "基隆市",
         "COUNTYENG": "Keelung City"
       }
@@ -272,7 +272,7 @@
       },
       "properties": {
         "COUNTYID": "O",
-        "COUNTYCODE": "5",
+        "COUNTYCODE": "4",
         "COUNTYNAME": "新竹市",
         "COUNTYENG": "Hsinchu City"
       }
@@ -298,7 +298,7 @@
       },
       "properties": {
         "COUNTYID": "A",
-        "COUNTYCODE": "6",
+        "COUNTYCODE": "0",
         "COUNTYNAME": "臺北市",
         "COUNTYENG": "Taipei City"
       }
@@ -359,7 +359,7 @@
       },
       "properties": {
         "COUNTYID": "F",
-        "COUNTYCODE": "7",
+        "COUNTYCODE": "1",
         "COUNTYNAME": "新北市",
         "COUNTYENG": "New Taipei City"
       }
@@ -448,7 +448,7 @@
       },
       "properties": {
         "COUNTYID": "D",
-        "COUNTYCODE": "9",
+        "COUNTYCODE": "14",
         "COUNTYNAME": "臺南市",
         "COUNTYENG": "Tainan City"
       }
@@ -493,7 +493,7 @@
       },
       "properties": {
         "COUNTYID": "H",
-        "COUNTYCODE": "10",
+        "COUNTYCODE": "3",
         "COUNTYNAME": "桃園市",
         "COUNTYENG": "Taoyuan City"
       }
@@ -532,7 +532,7 @@
       },
       "properties": {
         "COUNTYID": "K",
-        "COUNTYCODE": "11",
+        "COUNTYCODE": "7",
         "COUNTYNAME": "苗栗縣",
         "COUNTYENG": "Miaoli County"
       }
@@ -573,7 +573,7 @@
       },
       "properties": {
         "COUNTYID": "J",
-        "COUNTYCODE": "12",
+        "COUNTYCODE": "5",
         "COUNTYNAME": "新竹縣",
         "COUNTYENG": "Hsinchu County"
       }
@@ -648,7 +648,7 @@
       },
       "properties": {
         "COUNTYID": "Q",
-        "COUNTYCODE": "14",
+        "COUNTYCODE": "12",
         "COUNTYNAME": "嘉義縣",
         "COUNTYENG": "Chiayi County"
       }
@@ -782,7 +782,7 @@
       },
       "properties": {
         "COUNTYID": "V",
-        "COUNTYCODE": "16",
+        "COUNTYCODE": "18",
         "COUNTYNAME": "臺東縣",
         "COUNTYENG": "Taitung County"
       }
