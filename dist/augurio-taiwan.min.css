@@ -6,9 +6,9 @@ html, body, .container {
 
 body {
     background: #232526;
-    background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
-    background: -webkit-linear-gradient(left, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526)
+    background: -webkit-gradient(linear, left top, right top, from(#303c47), to(#151f24));
+    background: -webkit-linear-gradient(left, #303c47, #151f24);
+    background: linear-gradient(to right, #303c47, #151f24);
 }
 
 .container {
@@ -29,9 +29,9 @@ body {
 .tital {
     
     background: #232526;
-    background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
-    background: -webkit-linear-gradient(left, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526)
+    background: -webkit-gradient(linear, left top, right top, from(#303c47), to(#151f24));
+    background: -webkit-linear-gradient(left, #303c47, #151f24);
+    background: linear-gradient(to right, #303c47, #151f24);
 }
 .tital h1 {
     color: brown;
@@ -44,15 +44,15 @@ a {
 
 .header {
     background: #232526;
-    background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
-    background: -webkit-linear-gradient(left, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526);
+    background: -webkit-gradient(linear, left top, right top, from(#303c47), to(#151f24));
+    background: -webkit-linear-gradient(left, #303c47, #151f24);
+    background: linear-gradient(to right, #303c47, #151f24);
     display: flex;
     justify-content: center; 
     align-items: center; 
 }
 
-.header #link {
+.header #link{
     height: 50px;
     width: 100px;
     border: #262623;
@@ -77,14 +77,14 @@ a {
     display: flex;
     justify-content: space-around;
     background: #232526;
-    background: -webkit-gradient(linear, left top, right top, from(#414345), to(#232526));
-    background: -webkit-linear-gradient(left, #414345, #232526);
-    background: linear-gradient(to right, #414345, #232526)
+    background: -webkit-gradient(linear, left top, right top, from(#303c47), to(#151f24));
+    background: -webkit-linear-gradient(left, #303c47, #151f24);
+    background: linear-gradient(to right, #303c47, #151f24)
 }
 
-.chart {
+.chart, .p {
     min-width: 800px;
-    min-height: 425px;
+    min-height: 500px;
 }
 
 .taiwan-map, .shop-list {
@@ -136,7 +136,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 5vw;
+    font-size: 3vw;
     color: #FFCA28
 }
 
@@ -155,12 +155,12 @@ h1::after {
 }
 
 h2 {
-    font-size: 4vw;
+    font-size: 2.5vw;
     color: rgba(255, 255, 255, 0.8)
 }
 
 h3 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: rgba(255, 255, 255, 0.8)
 }
 
@@ -199,10 +199,36 @@ h3 {
     }
 
     h1 {
-        font-size: 8vw
+        font-size: 3vw
     }
 
     h2 {
-        font-size: 6vw
+        font-size: 2.5vw
     }
+    h3 {
+        font-size: 1.5vw
+    }
+}
+
+.gotop{
+    color: rgba(226, 248, 156, 0.9);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+#up {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: #262623;
+    border-width: 1px;
+    border-style: solid;
+    background: #43505e;;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    float: left;
+    text-decoration: none;
 }

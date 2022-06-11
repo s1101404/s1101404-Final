@@ -18,7 +18,8 @@ function drawStacked() {
     var options = {
         title: '北部',
         titleTextStyle: {
-            color: 'white'
+            color: 'white',
+            fontSize: '20'
           },
         backgroundColor: 'transparent',
         chartArea: { 
@@ -35,7 +36,8 @@ function drawStacked() {
         hAxis: {
             title: '人口數',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             minValue: 0,
             textStyle: {
@@ -45,10 +47,12 @@ function drawStacked() {
         vAxis: {
             title: '城市',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             textStyle: {
                 color: 'white',
+                fontSize: '15'
             }
         }
     };
@@ -72,7 +76,8 @@ function drawStacked2() {
     var options = {
         title: '中部',
         titleTextStyle: {
-            color: 'white'
+            color: 'white',
+            fontSize: '20'
           },
         backgroundColor: 'transparent',
         chartArea: { 
@@ -87,9 +92,10 @@ function drawStacked2() {
             textStyle:{color: 'white',}
         },
         hAxis: {
-            title: '人口數n',
+            title: '人口數',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             minValue: 0,
             textStyle: {
@@ -99,10 +105,12 @@ function drawStacked2() {
         vAxis: {
             title: '城市',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             textStyle: {
                 color: 'white',
+                fontSize: '15'
             }
         }
     };
@@ -126,7 +134,8 @@ function drawStacked3() {
     var options = {
         title: '南部',
         titleTextStyle: {
-            color: 'white'
+            color: 'white',
+            fontSize: '20'
           },
         backgroundColor: 'transparent',
         chartArea: { 
@@ -143,7 +152,8 @@ function drawStacked3() {
         hAxis: {
             title: '人口數',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             minValue: 0,
             textStyle: {
@@ -153,10 +163,12 @@ function drawStacked3() {
         vAxis: {
             title: '城市',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             textStyle: {
                 color: 'white',
+                fontSize: '15'
             }
         }
     };
@@ -177,7 +189,8 @@ function drawStacked4() {
     var options = {
         title: '東部',
         titleTextStyle: {
-            color: 'white'
+            color: 'white',
+            fontSize: '20'
           },
         backgroundColor: 'transparent',
         chartArea: { 
@@ -199,15 +212,18 @@ function drawStacked4() {
             minValue: 0,
             textStyle: {
                 color: 'white',
+                fontSize: '20'
             }
         },
         vAxis: {
             title: '城市',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             textStyle: {
                 color: 'white',
+                fontSize: '15'
             }
         }
     };

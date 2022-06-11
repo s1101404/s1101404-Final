@@ -5,102 +5,150 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>d3、vue 畫一個台灣地圖 - August - Let's Write</title>
+    <title>1101404-Final</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="dist/augurio-taiwan.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
-     $(document).ready(function(){
-        $("#all").click(function(){
+    $(document).ready(function () {
+        $("#all").click(function () {
             $("#chart_div").show()
             $("#chart_div2").show()
             $("#chart_div3").show()
             $("#chart_div4").show()
-            $("#chart_div3").css('margin','0%');
-            $("#chart_div4").css('margin','0%');
+            $("#chart_div3").css('margin', '0%');
+            $("#chart_div4").css('margin', '0%');
         })
-        $("#a1").click(function(){
+        $("#a1").click(function () {
             $("#chart_div").show()
             $("#chart_div2").hide()
             $("#chart_div3").hide()
             $("#chart_div4").hide()
-            $("#chart_div3").css('margin','0%');
-            $("#chart_div4").css('margin','0%');
+            $("#chart_div3").css('margin', '0%');
+            $("#chart_div4").css('margin', '0%');
         })
-        $("#a2").click(function(){
+        $("#a2").click(function () {
             $("#chart_div").hide()
             $("#chart_div2").show()
             $("#chart_div3").hide()
             $("#chart_div4").hide()
-            $("#chart_div3").css('margin','0%');
-            $("#chart_div4").css('margin','0%');
+            $("#chart_div3").css('margin', '0%');
+            $("#chart_div4").css('margin', '0%');
         })
-        $("#a3").click(function(){
+        $("#a3").click(function () {
             $("#chart_div").hide()
             $("#chart_div2").hide()
             $("#chart_div3").show()
             $("#chart_div4").hide()
-            $("#chart_div3").css('margin-top','-29.6%');
+            $("#chart_div3").css('margin-top', '-29.6%');
         })
-        $("#a4").click(function(){
+        $("#a4").click(function () {
             $("#chart_div").hide()
             $("#chart_div2").hide()
             $("#chart_div3").hide()
             $("#chart_div4").show()
-            $("#chart_div4").css('margin-top','-29.6%');
+            $("#chart_div4").css('margin-top', '-29.6%');
+        })
+        $("#allb").click(function () {
+            $("#piechart_3d").show()
+            $("#piechart_3d2").show()
+        })
+        $("#b1").click(function () {
+            $("#piechart_3d").show()
+            $("#piechart_3d2").hide()
+        })
+        $("#b2").click(function () {
+            $("#piechart_3d").hide()
+            $("#piechart_3d2").show()
         })
     })
-  </script>
+</script>
 
 <body>
-    <div class="tital">
+    <div class="tital" id="tital">
         <h1>台灣本島疫情報告</h1>
     </div>
     <div class="header">
         <div id="link"><a href="#app">
                 <h3>全台</h3>
             </a></div>
-        <div id="link"><a href="#chart_div">
+        <div id="link"><a href="#chart">
                 <h3>地區</h3>
+            </a></div>
+            <div id="link"><a href="#pie">
+                <h3>年齡</h3>
             </a></div>
     </div>
 
     <div class="container" id="app">
+        <div class="shop-list">
+            <h1>{{ h1 }}</h1>
+            <h2 style="color: red">{{ h2 }}</h2>
+            <h2 style="color: orange">{{ h3 }}</h2>
+        </div>
         <div class="taiwan-map" ref="map">
             <div id="map">
                 <svg id="svg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
             </div>
         </div>
-        <div class="shop-list">
-            <h1>{{ h1 }}</h1>
-            <h2 style="color: red">{{ h2 }}</h2>
-            <h2 style="color: orangered">{{ h3 }}</h2>
-        </div>
     </div>
-    <div class="header">
-        <div id="link"><a id="all" href="#"><h3>全部</h3></a>  </div>
-        <div id="link"><a id="a1" href="#"><h3>北部</h3></a> </div>
-        <div id="link"><a id="a2" href="#"><h3>中部</h3></a>  </div>
-        <div id="link"><a id="a3" href="#"><h3>南部</h3></a> </div>
-        <div id="link"><a id="a4" href="#"><h3>東部</h3></a>  </div>
+    <div class="header" id="chart">
+        <div id="link"><a id="all" href="#">
+                <h3>全部</h3>
+            </a> </div>
+        <div id="link"><a id="a1" href="#">
+                <h3>北部</h3>
+            </a> </div>
+        <div id="link"><a id="a2" href="#">
+                <h3>中部</h3>
+            </a> </div>
+        <div id="link"><a id="a3" href="#">
+                <h3>南部</h3>
+            </a> </div>
+        <div id="link"><a id="a4" href="#">
+                <h3>東部</h3>
+            </a> </div>
+    </div>
+    <div class="container2">
+        <div id="chart_div" class="chart" style="width: 950px; height: 500px"></div>
+        <div id="chart_div2" class="chart" style="width: 950px; height: 500px"></div>
     </div>
     <div class="container2" id="app">
-        <div id="chart_div" class= "chart" style="width: 1000px; height: 500px"></div>
-        <div id="chart_div2" class= "chart" style="width: 1000px; height: 500px"></div>
+        <div id="chart_div3" class="chart" style="width: 950px; height: 500px"></div>
+        <div id="chart_div4" class="chart" style="width: 950px; height: 500px;"></div>
     </div>
-    <div class="container2" id="app">
-        <div id="chart_div3" class= "chart" style="width: 1000px; height: 500px"></div>
-        <div id="chart_div4" class= "chart" style="width: 1000px; height: 500px;"></div>
+    <div class="header" id="chart">
+        <div id="link"><a id="allb" href="#">
+                <h3>全部</h3>
+            </a> </div>
+        <div id="link"><a id="b1" href="#">
+                <h3>中症</h3>
+            </a> </div>
+        <div id="link"><a id="b2" href="#">
+                <h3>重症</h3>
+            </a> </div>
+    </div>
+    <h3 style="font-size: 30px; color:red">目前全台總確診人數: 2,734,066人</h3>
+    <h3 style="font-size: 20px; color: orange">輕症/無症狀人數:2,724,428人</h3>
+    <div class="container2" id="pie">
+        <div id="piechart_3d" class="pie" style="width: 900px; height: 500px;"></div>
+        <div id="piechart_3d2" class="pie" style="width: 900px; height: 500px;"></div>
+    </div>
+    <div class="gotop">
+        <div id="up"> <a href="#tital">
+                <h3 style="font-size: 20px;">Top</h3>
+            </a></div>
     </div>
     <script src="//cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    
     <script src="dist/augurio-taiwan.min.js"></script>
     <script src="dist/data.js"></script>
-
+    <script src="dist/top.js"></script>
+    <script src="dist/pie.js"></script>
 </body>
 
 </html>
