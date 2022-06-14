@@ -78,13 +78,10 @@
         <div id="link"><a href="#chart">
                 <h3>地區</h3>
             </a></div>
-            <div id="link"><a href="#pie">
+        <div id="link"><a href="#pie">
                 <h3>年齡</h3>
             </a></div>
-            <div id="link"><a href="#pie">
-                <h3>年齡</h3>
-            </a></div>
-            <div id="link"><a href="#pie">
+        <div id="link"><a href="#pie">
                 <h3>資訊</h3>
             </a></div>
     </div>
@@ -142,6 +139,27 @@
         <div id="piechart_3d" class="pie" style="width: 900px; height: 500px;"></div>
         <div id="piechart_3d2" class="pie" style="width: 900px; height: 500px;"></div>
     </div>
+    
+        <form method="post" action="s1101404_HW2.php">
+            <input name="name" type="text" class="form-control" placeholder="姓名">
+            <input name="number" type="text" class="form-control" placeholder="學號 s#######" pattern="s\d{6,7}">
+            <input name="email" type="email" class="form-control" placeholder="Email" required>
+            <input name="phone" type="text" class="form-control" placeholder="電話 09##-###-###"
+                pattern="09\d{2}-\d{3}-\d{3}">
+            <input name="address" type="text" class="form-control" placeholder="地址">
+            <textarea class="form-control" rows="4" placeholder="想對我們說的話"></textarea>
+            <h1>對網頁滿意度</h1>
+            <lable class="form">
+                <input name="rating" type="radio" value="非常滿意">非常滿意
+                <input name="rating" type="radio" value="滿意">滿意
+                <input name="rating" type="radio" value="普通">普通
+                <input name="rating" type="radio" value="不滿意">不滿意
+                <input name="rating" type="radio" value="非常不滿意">非常不滿意
+            </lable>
+            <h1></h1>
+            <input type="submit" class="form-control" value="報名">
+        </form>
+    
     <div class="gotop">
         <div id="up"> <a href="#tital">
                 <h3 style="font-size: 20px;">Top</h3>

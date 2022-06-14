@@ -207,7 +207,8 @@ function drawStacked4() {
         hAxis: {
             title: '人口數',
             titleTextStyle: {
-                color: 'white'
+                color: 'white',
+                fontSize: '20'
               },
             minValue: 0,
             textStyle: {
