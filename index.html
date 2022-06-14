@@ -8,7 +8,6 @@
     <title>1101404-Final</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
     <link rel="stylesheet" href="dist/augurio-taiwan.min.css" />
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
@@ -81,8 +80,11 @@
         <div id="link"><a href="#pie">
                 <h3>年齡</h3>
             </a></div>
-        <div id="link"><a href="#pie">
+        <div id="link"><a href="#info">
                 <h3>資訊</h3>
+            </a></div>
+        <div id="link"><a href="#feedback">
+                <h3>回饋</h3>
             </a></div>
     </div>
     <div class="container" id="app">
@@ -139,27 +141,56 @@
         <div id="piechart_3d" class="pie" style="width: 900px; height: 500px;"></div>
         <div id="piechart_3d2" class="pie" style="width: 900px; height: 500px;"></div>
     </div>
-    
-        <form method="post" action="s1101404_HW2.php">
-            <input name="name" type="text" class="form-control" placeholder="姓名">
-            <input name="number" type="text" class="form-control" placeholder="學號 s#######" pattern="s\d{6,7}">
-            <input name="email" type="email" class="form-control" placeholder="Email" required>
-            <input name="phone" type="text" class="form-control" placeholder="電話 09##-###-###"
-                pattern="09\d{2}-\d{3}-\d{3}">
-            <input name="address" type="text" class="form-control" placeholder="地址">
-            <textarea class="form-control" rows="4" placeholder="想對我們說的話"></textarea>
-            <h1>對網頁滿意度</h1>
-            <lable class="form">
-                <input name="rating" type="radio" value="非常滿意">非常滿意
-                <input name="rating" type="radio" value="滿意">滿意
-                <input name="rating" type="radio" value="普通">普通
-                <input name="rating" type="radio" value="不滿意">不滿意
-                <input name="rating" type="radio" value="非常不滿意">非常不滿意
-            </lable>
-            <h1></h1>
-            <input type="submit" class="form-control" value="報名">
+    <div class="tital" id="info">
+        <h3 style="font-size: 4vh;">資訊欄</h3>
+    </div>
+    <div class="container3">
+        <div id="infomation">
+            <p><br>
+                這次的期末專題網頁想自己製作看看關於疫情的統整資料網頁，其中裡面有包含:
+                <br>1.全台各縣市的確診人數和增加人數
+                <br>2.以柱狀圖方式呈現第一點
+                <br>3.以圓餅圖的方式呈現目前的輕/中/重症的確診比例
+                <br>4.意見回饋
+                <br> &emsp;
+                <br>1. 全台的確診人數
+                <br> &emsp;我想讓使用者能透過點擊台灣地圖的方式，去選取自己想要的縣市，
+                <br> &emsp;所以我先去找台灣地圖的json檔，透過d3的方式去呈現。而其中再以Vue去把資料帶入頁面，
+                <br> &emsp;當使用者點擊(例如: 桃園)，就會將桃園相關的資料導入，雖然的確能顯示所點擊的縣市，
+                <br> &emsp;但可惜的是網路上找不到現成記錄每日各縣市確診數增加的json檔，所以我自己建立data，
+                <br> &emsp;透過讀取台灣json裡面的COUNTRYCODE來判斷 (例如桃園的CODE為3，所以讀取data[3])。
+                <br> &emsp;
+                <br>2/3. 柱狀圖和圓餅圖
+                <br> &emsp;原本是想要繼續使用d3去作呈現，但後來突然想到之前的Web課程
+                <br> &emsp;有教過以Google圖表去呈現我們想要的數據和內容，相對d3容易上手許多。
+                <br> &emsp;接著我想讓使用者能自己決定要看甚麼資訊， 所以我用jquery的方式去做，
+                <br> &emsp;如果點擊，例如只想看北部的數據，就先將其他圖表先隱藏起來，如果要看全部，把所有圖表打開就好。
+                <br> &emsp;而關於圖表方面，柱狀圖中，藍色代表目前累積的確診數，而紅色代表當日的增加加數，
+                <br> &emsp;不過由於累積確診數過於龐大，所以在某些地區會比較難去呈現。
+                <br> &emsp;而圓餅圖就蠻正常的去顯示各年齡層的確診人數，
+                <br> &emsp;因為沒有什麼輕/無症狀各年齡層的數據，所以我就直接顯示在上面了。
+                <br>
+                <br> 4. 意見回饋
+                <br> &emsp; 這邊如果使用者有任何意見的話，輸入完自己的email和意見內容，
+                <br> &emsp; 按下輸出後，我透過FormSubmit的方式，就能直接把信寄到我的信箱了。
+                <br>
+                <br> &emsp; 最後除了開頭的header能帶使用者前往想要的資訊，
+                <br> &emsp; 我還在右下角新增了回首頁按鈕，方便使用者去使用。
+            </p>
+        </div>
+    </div>
+    <div class="tital" id="feedback">
+        <h3 style="font-size: 4vh;">意見回饋</h3>
+    </div>
+    <div class="container2" id="pie">
+        <form action="https://formsubmit.co/puma8807@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="New submission!">
+            <p style="font-size: 20px;">您的email: </p><input type="email" name="email" required>
+            <p style="font-size: 20px;">內容:</p><input type="text" name="message" style="height:200px"required>
+            <input type="hidden" name="_next" value="https://s1101404.github.io/s1101404-Final/thx.html">
+            <button type="submit">寄出</button>
         </form>
-    
+    </div>
     <div class="gotop">
         <div id="up"> <a href="#tital">
                 <h3 style="font-size: 20px;">Top</h3>
