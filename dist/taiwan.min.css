@@ -176,8 +176,7 @@ button[type=submit] {
 #map path:hover, #map path.active {
     fill: rgba(255, 202, 40, 0.5);
     stroke: #FFCA28;
-    -webkit-transform: translateY(-5px);
-    transform: translateY(-5px)
+   
 }
 
 
